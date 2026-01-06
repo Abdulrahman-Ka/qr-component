@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
     <link
       rel="icon"
@@ -14,7 +13,6 @@
 
     <title>Frontend Mentor | QR code component</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -53,19 +51,21 @@
       }
     </style>
   </head>
-  <body class="bg-slate-300 flex-center min-h-screen">
-    <main class="bg-white p-3 rounded-2xl shadow-2xl">
-      <div class="w-[320px] h-[500px]">
+  <body class="bg-slate-300 min-h-screen flex-center m-3 md:m-0">
+    <main class="bg-white p-2 rounded-2xl shadow-2xl">
+      <div class="max-w-full max-h-full">
         <img
           src="./images/image-qr-code.png"
           alt="QR code"
-          class="rounded-xl"
+          class="rounded-xl size-[288px]"
         />
-        <div class="p-2 flex-center flex-col gap-2 mt-2 text-center">
-          <h2 class="text-preset-bold">
+        <div
+          class="pt-3 pb-5 px-2 max-w-[296px] flex-center flex-col gap-2 text-center"
+        >
+          <h1 class="text-preset-bold">
             Improve your front-end<br />
             skills by building projects
-          </h2>
+          </h1>
           <p class="text-preset-2 text-slate-900">
             Scan the QR code to visit Frontend <br />
             Mentor and take your coding skills to <br />
