@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | QR code component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Skranji:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style type="text/tailwindcss">
+      @theme {
+        --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+
+        --color-slate-900: #1f314f;
+        --color-slate-500: #68778d;
+        --color-slate-300: #d5e1ef;
+
+        --text-preset-bold: 22px;
+        --text-preset-bold--font-weight: 700;
+        --text-preset-bold--line-height: 1.2;
+        --text-preset-bold--letter-spacing: 0px;
+
+        --text-preset-2: 15px;
+        --text-preset-2--font-weight: 200;
+        --text-preset-2-line-height: 1.4;
+        --text-preset-2-letter-spacing: 0.2px;
+
+        --spacing-2: 16px;
+        --spacing-3: 24px;
+        --spacing-5: 40px;
+      }
+      @layer body {
+        .flex-center {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-slate-300 flex-center min-h-screen">
+    <main class="bg-white p-3 rounded-2xl shadow-2xl">
+      <div class="w-[320px] h-[500px]">
+        <img
+          src="./images/image-qr-code.png"
+          alt="QR code"
+          class="rounded-xl"
+        />
+        <div class="p-2 flex-center flex-col gap-2 mt-2 text-center">
+          <h2 class="text-preset-bold">
+            Improve your front-end<br />
+            skills by building projects
+          </h2>
+          <p class="text-preset-2 text-slate-900">
+            Scan the QR code to visit Frontend <br />
+            Mentor and take your coding skills to <br />
+            the next level
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
